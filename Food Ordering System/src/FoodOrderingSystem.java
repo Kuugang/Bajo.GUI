@@ -17,6 +17,7 @@ public class FoodOrderingSystem extends JFrame {
     private JRadioButton rb10;
     private JRadioButton rb15;
     private JButton btnOrder;
+
     private JCheckBox[] cItems = {cPizza, cBurger, cFries, cSoftDrinks, cTea, cSundae};
     private JRadioButton[] rDiscount = {rbNone, rb5, rb10, rb15};
     AbstractMap<String, Integer> menu;

@@ -1,6 +1,8 @@
+import org.w3c.dom.css.RGBColor;
+
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.*;
+import java.awt.event.*;
 
 public class LeapYearChecker extends JFrame{
     JPanel jPanel;
@@ -19,6 +21,52 @@ public class LeapYearChecker extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 showLeapYear();
+            }
+        });
+
+        btnCheckYear.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+                super.mousePressed(e);
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                super.mouseReleased(e);
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                btnCheckYear.setBackground(Color.BLACK);
+                btnCheckYear.setForeground(Color.WHITE);
+                super.mouseEntered(e);
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                btnCheckYear.setBackground(Color.WHITE);
+                btnCheckYear.setForeground(Color.BLACK);
+                super.mouseExited(e);
+            }
+
+            @Override
+            public void mouseWheelMoved(MouseWheelEvent e) {
+                super.mouseWheelMoved(e);
+            }
+
+            @Override
+            public void mouseDragged(MouseEvent e) {
+                super.mouseDragged(e);
+            }
+
+            @Override
+            public void mouseMoved(MouseEvent e) {
+                super.mouseMoved(e);
             }
         });
     }
